@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": ".",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["app.ts", "notificationApp.ts", "senderApp.ts", "consumerApp.ts", "clients/**/*.ts", "controllers/**/*.ts", "databases/**/*.ts", "models/**/*.ts", "queues/**/*.ts", "repositories/**/*.ts", "services/**/*.ts", "workers/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

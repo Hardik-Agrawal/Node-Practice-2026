@@ -1,0 +1,31 @@
+{
+  "name": "notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/NotificationConsumerWorker.test.js",
+    "user": "nodemon --env-file=.env --watch . --ext ts --exec tsx app.ts",
+    "notification": "nodemon --env-file=.env --watch . --ext ts --exec tsx notificationApp.ts",
+    "sender": "nodemon --env-file=.env --watch . --ext ts --exec tsx senderApp.ts",
+    "consumer": "nodemon --env-file=.env --watch . --ext ts --exec tsx consumerApp.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
